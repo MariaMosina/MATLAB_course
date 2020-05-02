@@ -1,8 +1,8 @@
 function M = matrix_chess(n, m)
 M = zeros(n , m)
-i = 1:n
-j = 1:2:m
-M(i, j) = 1
-i = 2:2:n
-j = 1:m
-M(i, j) = 1-M(i, j)
+ii = 1:n
+jj = 1:2:m
+M(ii, jj) = 1
+ii = 2:2:n
+jj = 1:m
+M(ii, jj) = 1-M(ii, jj)
