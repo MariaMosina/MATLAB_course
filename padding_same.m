@@ -1,0 +1,13 @@
+function M = padding_same(A)
+n = size(A, 1);
+m = size(A, 2);
+M = zeros(size(A, 1)+2, size(A, 2)+2);
+M(2:n+1, 2:m+1) = A;
+M(1, 1) = M(2, 2);
+M(1, m+2) = M(2, m+1);
+M(n+2, 1) = M(n+1, 2);
+M(n+2, m+2) = M(n+1, m+1);
+M(2:n+1, 1) = M(2:n+1, 2);
+M(2:n+1, m+2) = M(2:n+1, m+1);
+M(1, 2:m+1) = M(2, 2:m+1);
+M(n+2, 2:m+1) = M(n+1, 2:m+1);
