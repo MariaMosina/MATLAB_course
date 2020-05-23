@@ -15,8 +15,8 @@ for ii = 2:(size(A, 1)-1)
         end
     end
 end
-n_2 = (n-p_n).*(n-p_n)
-m_2 = (m-p_m).*(m-p_m)
+n_2 = (n-p_n).*(n-p_n);
+m_2 = (m-p_m).*(m-p_m);
 s = n_2+m_2;
 n_max = 0;
 n_res=[];
